@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --navbar-height:56px;
+}
+
+/* Navbar */
+
+#navbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#navbar::before{
+  content: '';
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+
+}
+.logo{
+  height: var(--navbar-height);
+  margin: 15px 15px;
+}
+.logo img{
+  height: 100%;
+}
+.nav-list{
+  display: flex;
+  margin: 10px;
+}
+.nav-list .item{
+  /* padding: 5px; */
+  list-style: none;
+  font-size: 1.1rem;
+  
+}
+
+.nav-list .item a{
+  padding: 10px;
+  
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.nav-list .item a:hover{
+  background-color: white;
+  color: black; 
+}
+
+/* Home section */
+
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+  justify-content: center;
+  height: 293px;
+
+}
+
+#home::before{
+  content: '';
+  background: url(/images/bg1.jpeg);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.89;
+  width: 100%;
+  height: 63%;
+  top: 0;
+  
+}
+
+#home h1{
+  padding: 6px 0px;
+  color: white;
+}
+#home p{
+  font-size: 1.2rem;
+  color: white;
+  padding: 3px;
+}
+
+/* services section */
+
+.services{
+  margin: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+.services .box{
+  border: 2px solid brown;
+  background-color: #e7d0d0;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 23px;
+}
+.services .box img{
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+.services{
+
+}
+.services{}
+
+/* clents */
+
+.clients-section{
+  height: 340px;
+}
+
+.clients-section::before{
+  content: '';
+  position:absolute;
+  background:url(./images/tomato.jpg);
+  
+  height: 340px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+.clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item{
+  padding: 35px;
+}
+.clients-item img{
+  height: 170px;
+}
+
+/* Contact us */
+
+.contact-box{
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+.contact-box form{
+  padding: 36px;
+  
+  width: 40%;
+  background-color: rgb(93, 93, 206);
+
+}
+.contact-box label{
+  font-size: 1.3rem;
+  
+}
+
+.contact-box input,
+.contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  
+
+}
+
+/* footer */
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+/* utility classes */
+.h-primary{
+  font-size: 2.5rem;
+  padding: 12px;
+}
+.h-secondary{
+  font-size: 2.5rem;
+  padding: 12px;
+}
+#home button{
+  padding: 6px 20px;
+  margin: 17px;
+  color: white;
+  background-color: brown;
+  border: 2px solid white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
